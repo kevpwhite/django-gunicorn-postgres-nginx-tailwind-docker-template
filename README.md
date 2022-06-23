@@ -1,4 +1,4 @@
-# Portfolio Code 
+# Django using Gunicorn, Postgres, Nginx, Tailwind CSS on Docker
 
 ## Considerations
 
