@@ -68,7 +68,7 @@ sudo docker-compose exec web python3 manage.py migrate --noinput
 
 ## Production 
 
-This has will spin up 3 containers; nginx, gunicorn, and postgres containers
+This will spin up 3 containers; nginx, gunicorn, and postgres containers
 ```bash
 # Create .env file
 sudo nano .env 
