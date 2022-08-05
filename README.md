@@ -16,8 +16,13 @@ This is bowler plate code I use to get my projects started that is built on djan
 
 Install django
 ```bash
+sudo apt update 
+sudo apt -y install python3-pip
 pip3 install django
-django-admin startproject ENTERPROJECTNAME .
+python3 -m django startproject ENTERPROJECTNAME .
+
+# Test django was installed
+python3 manage.py runserver 127.0.0.0:8000 #change IP to server address
 
 # copy the following from project folder setting.py created above and enter into the .env files created below.
 # copy SECRET_KEY= 
@@ -53,8 +58,9 @@ SQL_HOST=$SQL_HOST
 SQL_PORT=$SQL_POST
 DATABASE=$DATABASE
 
-ALLOWED_HOSTS=yourdomainname.com,www.yourdomainname.com
-CSRF_TRUSTED_ORIGINS=https://*.yourdomainname.com,http://*.yourdomainname.com
+# Change 0.0.0.0 to server ip address
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0 
+CSRF_TRUSTED_ORIGINS=http://localhost.com,http://127.0.0.1,http://0.0.0.0
 
 # Set permissions for .env
 sudo chmod 600 .env
@@ -71,7 +77,7 @@ sudo docker-compose exec web python3 manage.py migrate --noinput
 This will spin up 3 containers; nginx, gunicorn, and postgres containers
 ```bash
 # Create .env file
-sudo nano .env 
+sudo nano .env.prod
 
 #copy these variables enter in custom variables below are just examples
 DEBUG=1
