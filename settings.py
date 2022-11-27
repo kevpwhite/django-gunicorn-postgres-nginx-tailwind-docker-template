@@ -63,7 +63,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'techprohq',
     'django.contrib.sites',
     'django.contrib.sitemaps',
     'captcha'
