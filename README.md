@@ -28,6 +28,7 @@ python3 manage.py runserver 127.0.0.0:8000 #change IP to server address
 # copy SECRET_KEY= 
 # copy WSGI_APPLICATION = 
 # copy ROOT_URLCONF =
+# add the project name to INSTALLED_APPS= [projectname] so django is aware of your project. 
 
 #projectname is the name entered above it creates a folder, I usually use the domain name. Move the root settings.py to project folder to replace standard settings.py file
 mv settings.py projectname
