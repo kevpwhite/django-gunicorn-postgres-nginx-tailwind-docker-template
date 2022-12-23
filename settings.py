@@ -33,9 +33,6 @@ SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_HSTS_PRELOAD = True
 SECURE_REFERRER_POLICY = "strict-origin"
 SECURE_BROWSER_XSS_FILTER = True
-CAPTCHA_FONT_SIZE=42
-CAPTCHA_IMAGE_SIZE=[200,48]
-CAPTCHA_BACKGROUND_COLOR="#ffffff"
 
 # Site ID is needed for this
 SITE_ID = 1
@@ -65,7 +62,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'django.contrib.sitemaps',
-    'captcha'
 ]
 
 MIDDLEWARE = [
