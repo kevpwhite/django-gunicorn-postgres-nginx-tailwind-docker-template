@@ -111,7 +111,7 @@ sudo chmod 600 .env.prod
 cd nginx
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./etc/ssl/private/localhost.key -out ./etc/ssl/certs/localhost.crt
 
-# Change all the MODULENAME in this file to domain name used so nginx will work correctly. This config is designed to be used behind a proxy nginx server. 
+# Change all the DOMAINNAME in this file to domain name used so nginx will work correctly. This config is designed to be used behind a proxy nginx server. 
 sudo nano nginx/nginx.conf
 
 # Command to build docker production containers
