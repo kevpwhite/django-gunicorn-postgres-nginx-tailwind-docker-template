@@ -132,7 +132,10 @@ sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py collec
 
 ```
 
-# Template colors coded in tailwind.config.js there is a primary-color, second-color, third-color, fourth-color, fith-color. Change those to your color theme. Example background code would be bg-primary-color. Example text would be text-primary-color.
+## Theme Colors
+
+Template colors coded in tailwind.config.js there is a primary-color, second-color, third-color, fourth-color, fith-color. Change those to your color theme. Example background code would be bg-primary-color. Example text would be text-primary-color. This is a great color pallete generator https://colorhunt.co/palettes/
+
 ```
     theme: {
         extend: {
@@ -146,5 +149,3 @@ sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py collec
         },
     },
 ```
-# great color pallete generator https://colorhunt.co/palettes/
-
