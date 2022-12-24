@@ -1,0 +1,60 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+  <!-- Section: Design Block -->
+  <section class="mb-32 text-gray-800">
+    <div
+      class="relative overflow-hidden bg-no-repeat bg-cover"
+      style="
+        background-position: 50%;
+        background-image: url('https://mdbootstrap.com/img/new/textures/full/66.jpg');
+        height: 300px;
+      "
+    ></div>
+    <div class="container text-gray-800 px-4 md:px-12">
+      <div
+        class="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6"
+        style="
+          margin-top: -100px;
+          background: hsla(0, 0%, 100%, 0.8);
+          backdrop-filter: blur(30px);
+        "
+      >
+        <div class="flex flex-wrap justify-center text-center lg:text-left">
+          <div class="grow-0 shrink-0 basis-auto w-full xl:w-10/12 px-6">
+            <div class="grid lg:grid-cols-2 gap-x-6 items-center">
+              <div class="mb-10 lg:mb-0">
+                <h2 class="text-3xl font-bold">
+                  Templated Site Ready to go!
+                </h2>
+                <p>
+                  Aww yeah, you successfully installed the core boiler plate code to start a new project. 
+                  <br />
+                  <span class="text-primary-color">Refer to tailwind css, tailwind elements, flowbite, and animate.css for rapid development tools.</span>
+                </p>
+              </div>
+
+              <div class="mb-6 md:mb-0">
+                <div class="md:flex flex-row">
+                  <input
+                    type="text"
+                    class="form-control block w-full px-4 py-2 mb-2 md:mb-0 md:mr-2 text-xl font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-second-color focus:outline-none"
+                    placeholder="Enter your email"
+                  />
+                  <button
+                    type="submit"
+                    class="inline-block px-7 py-3 bg-primary-color text-white font-medium text-sm leading-snug uppercase rounded shadow-md hover:bg-second-color hover:shadow-lg focus:bg-second-color focus:shadow-lg focus:outline-none focus:ring-0 active:bg-second-color active:shadow-lg transition duration-150 ease-in-out"
+                  >
+                    Subscribe
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Section: Design Block -->
+
+{% endblock %}

@@ -1,0 +1,242 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <!-- HEAD SECTION -->
+    <head>
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.ico' %}"/>
+        <!-- SEO META DATA -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="" />
+        <meta name="news_keywords" content="" />
+        <meta name="google-site-verification" content="" />
+        <meta name="robots" content="index,follow" />
+        <meta name="googlebot-news" content="index,follow" />
+        <meta name="googlebot" content="index,follow" />
+        <meta property="og:url" content="" />
+        <meta property="og:type" content="" />
+        <meta property="og:title" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image"content=""/>
+        <!-- CSS FILES -->
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'css/tailwind.css' %}"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    </head>
+    <!-- HEAD END -->
+
+    <!-- HEADER SECTION -->
+    <header>
+        <nav class="relative w-full flex flex-wrap items-center justify-between py-4 bg-fourth-color text-primary-color hover:text-gray-700 focus:text-gray-700 shadow-lg navbar navbar-expand-lg navbar-light
+        ">
+        <div class="container-fluid w-full flex flex-wrap items-center justify-between px-6">
+        <button class="navbar-toggler text-gray-500 border-0 hover:shadow-none hover:no-underline py-2 px-2.5 bg-transparent focus:outline-none focus:ring-0 focus:shadow-none focus:no-underline" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg fill="hsl(224, 7.2%, 40%)" viewBox="0 0 100 80" width="25" height="25">
+                <rect width="80" height="14"></rect>
+                <rect y="30" width="80" height="14"></rect>
+                <rect y="60" width="80" height="14"></rect>
+            </svg>
+        </button>
+        <div class="collapse navbar-collapse flex-grow items-center" id="navbarSupportedContent">
+        <a href="">
+            <!-- Logo -->
+            <svg x="100" y="0" width="100" height="100" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 210 210" version="1.1">
+                <g inkscape:label="TECHPROHQ" inkscape:groupmode="layer" id="layer1" style="display:inline">
+                <path inkscape:connector-curvature="0" d="m 16.890327,154.09197 v -3.41021 H 32.6117 v 3.41021 h -5.251752 v 12.53364 h -5.251752 v -12.53364 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;stroke-width:0.96844" id="path4485" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 34.576615,163.30397 v -9.16771 q 0,-0.31002 0.101647,-0.70861 0.677645,-2.74589 4.980694,-2.74589 h 10.842325 v 3.41021 h -9.453153 q -0.101646,0.0443 -0.338822,0.0886 -0.880939,0.22144 -0.880939,0.93006 v 1.77154 h 10.672914 v 3.4545 H 39.828367 v 1.77154 q 0,0.97434 1.35529,1.06293 h 9.317624 v 3.45449 H 40.404366 q -5.827751,0 -5.827751,-3.32163 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;stroke-width:0.96844" id="path4487" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 53.44927,163.08253 v -8.76911 q 0,-2.08157 1.219761,-2.83447 1.253644,-0.79719 4.506342,-0.79719 h 10.232445 v 3.41021 h -9.487035 q -1.016468,0.0886 -1.219762,0.70862 v 6.99757 q 0,0.88577 0.474352,1.1958 0.271058,0.17715 1.084232,0.17715 0,0 0.44047,0 h 8.707743 v 3.4545 H 58.396081 q -0.880939,0 -1.829643,-0.26573 -3.117168,-0.7972 -3.117168,-3.27735 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;stroke-width:0.96844" id="path4489" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 72.084105,166.62561 v -15.94385 h 5.251751 v 6.20038 h 7.386335 v -6.20038 h 5.25175 v 15.94385 h -5.25175 v -6.28896 h -7.386335 v 6.28896 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;stroke-width:0.96844" id="path4491" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 93.159194,166.62561 v -15.94385 h 12.197616 q 2.40564,0 3.82869,0.88577 1.42306,0.88577 1.42306,2.25871 v 3.94167 q 0,1.46152 -1.45694,2.34729 -1.28753,0.75291 -3.38823,0.75291 h -7.352447 v 5.7575 z m 5.251749,-9.2563 h 5.116217 q 1.82965,0 1.82965,-0.88577 v -1.55009 q -0.13553,-0.70862 -1.35529,-0.84148 h -5.590577 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#1dbc60;fill-opacity:1;stroke-width:0.96844" id="path4493" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 113.04827,150.68176 h 12.26538 q 5.04846,0 5.04846,3.23306 v 3.18877 q 0,1.55009 -1.49082,2.43586 -1.05036,0.62005 -2.50729,0.75291 -0.576,0.0442 -0.91482,0.0442 l -0.81318,-0.0442 5.96328,6.33325 h -6.20045 l -5.52282,-5.93465 q -0.50823,-0.53146 -0.40658,-1.24008 0.27105,-2.03728 3.15105,-2.03728 h 2.13458 q 1.38918,0 1.38918,-0.88577 v -1.46152 q 0,-0.79718 -1.28753,-0.93005 -0.10165,-0.0442 -0.33882,-0.0442 h -5.21787 v 12.53363 h -5.25175 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#1dbc60;fill-opacity:1;stroke-width:0.96844" id="path4495" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 133.27546,154.09197 q 0,-0.3986 0.13553,-0.84148 0.84706,-2.56873 5.38728,-2.56873 h 6.20045 q 5.45505,0 5.45505,3.41021 v 9.07914 q 0,3.4545 -5.48892,3.4545 h -6.16658 q -2.50728,0 -3.72704,-0.57576 -1.21977,-0.62003 -1.62635,-2.03726 -0.13553,-0.44289 -0.13553,-0.7972 z m 5.25175,1.10722 0.0339,6.86471 q 0,1.10721 1.728,1.10721 h 3.21881 q 1.728,0 1.728,-0.97435 v -6.99757 q 0,-1.10722 -1.728,-1.10722 h -3.21881 q -1.76188,0 -1.76188,1.10722 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#1dbc60;fill-opacity:1;stroke-width:0.96844" id="path4497" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 153.63916,166.62561 v -15.94385 h 5.25175 v 6.20038 h 7.38633 v -6.20038 h 5.25175 v 15.94385 h -5.25175 v -6.28896 h -7.38633 v 6.28896 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;fill-opacity:1;stroke-width:0.96844" id="path4499" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                <path inkscape:connector-curvature="0" d="m 174.71424,163.17111 v -9.07914 q 0,-3.41021 5.45505,-3.41021 h 6.23433 q 5.45505,0 5.45505,3.41021 v 9.07914 q 0,1.32865 -0.74541,2.08156 -1.05035,1.15149 -2.71059,1.24007 l 3.59153,2.48016 h -7.25081 l -3.52376,-2.34729 h -1.05034 q -5.45505,0 -5.45505,-3.4545 z m 5.25175,-1.10721 q 0,1.10721 1.728,1.10721 h 3.18493 q 1.72799,0 1.72799,-0.97435 v -6.99757 q 0,-1.10722 -1.72799,-1.10722 h -3.18493 q -1.728,0 -1.728,1.10722 z" style="font-size:38.73749924px;line-height:1.25;font-family:xscale;-inkscape-font-specification:xscale;fill:#333333;fill-opacity:1;stroke-width:0.96844" id="path4501" inkscape:export-xdpi="580.22998" inkscape:export-ydpi="580.22998"></path>
+                </g>
+                <g inkscape:groupmode="layer" id="layer2" inkscape:label="I Building" style="display:inline;opacity:1">
+                <path style="display:inline;opacity:1;fill:#1dbc60;fill-opacity:1;stroke:none;stroke-width:0.99999869;stroke-opacity:0.94196424" clip-path="none" d="m 296.25977,219.12305 -87.1875,60.25 v 19.36523 l 87.1875,-49.25586 z m 0,50 -87.10938,42.10351 v 19.375 L 266.81641,310 v 148.89258 l -57.66602,-20.03516 v 19.375 l 66.74023,31.60352 20.36915,9.66992 0.0293,-0.0156 V 269.13672 Z m -49.46485,63.63672 -37.64453,10.375 v 19.37304 l 37.64453,-5.6289 z m -0.004,39.72461 -37.64063,2.55859 v 19.37305 l 37.64063,2.1875 z m -37.64063,34.46679 v 19.37305 l 37.64844,10.00976 0.002,-24.12304 z m 0,63.81836 v 19.37109 l 87.14258,59.36524 v -30.36133 z" transform="scale(0.26458333)" id="rect2997-5-4-8-7-1-7" inkscape:connector-curvature="0"></path>
+                <path style="fill:#333333;fill-opacity:1;stroke-width:0.47600129" d="m 491.14062,118.50391 -2,105.04297 h 1.8125 v 25.36132 l 87.1875,49.25586 v -19.36523 l -85.62304,-59.16992 z m -0.1875,150.04492 -0.0312,0.0137 v 230.35352 l 0.0312,0.0156 29.44336,-13.97656 v -175.5293 l 57.66602,20.60156 v -19.375 z m 49.4629,63.63672 v 24.11914 l 37.64648,5.6289 v -19.37304 z m 0.004,39.72461 v 24.11914 l 37.64258,-2.1875 v -19.37305 z m 37.64258,34.46679 -37.65039,5.25977 0.002,24.12305 L 578.0625,425.75 Z m -0.002,31.90821 -37.64258,13.08007 0.004,24.13672 37.64062,-17.84375 z m 0.002,31.91015 -87.14258,48.375 v 30.36133 l 87.14258,-59.36523 z" id="rect4482" inkscape:connector-curvature="0" transform="scale(0.26458333)"></path>
+                <path style="display:inline;opacity:1;fill:#1dbc60;fill-opacity:1;stroke-width:0.99999869" clip-path="none" d="m 490.95312,218.54883 -87.1875,60.25 v 19.36523 l 87.1875,-49.25586 z m -0.0605,50 -3.32617,1.63672 -83.72266,40.46679 v 19.375 l 57.60547,-20.58007 v 175.50781 l 29.44336,13.97656 0.0293,-0.0156 v -199.9961 l 0.0312,-0.0117 v -30.35937 l -0.0312,0.0137 z m -49.4043,63.63867 -37.64453,10.375 v 19.37305 l 37.64453,-5.62891 z m -0.004,39.72266 -37.64063,2.55859 v 19.37305 l 37.64063,2.1875 z m -37.64063,34.46679 V 425.75 l 37.64648,10.00977 0.002,-24.12305 z m 0,31.90625 -0.002,19.37305 37.64062,17.84375 0.004,-24.13672 z m 0,31.91211 v 19.3711 l 87.14063,59.36523 v -30.36133 z" transform="scale(0.26458333)" id="rect2997-5-4-8-7-1-8-2" inkscape:connector-curvature="0"></path>
+                <path style="display:inline;opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.26458299;stroke-opacity:0.94196424" clip-path="none" d="m 78.400949,57.976306 23.068361,15.941146 v 5.123717 L 78.400949,66.008889 Z m 0,13.229167 23.047691,11.139887 v 5.126302 l -15.257469,-5.45083 v 39.394498 l 15.257469,-5.30097 v 5.1263 l -17.658354,8.36176 -5.389337,2.5585 -0.0078,-0.004 V 71.20909 Z m 13.087575,16.837215 9.960116,2.745052 v 5.125784 l -9.960116,-1.489313 z m 0.0011,10.51047 9.959086,0.67696 v 5.125782 l -9.959088,0.57878 z m 9.959086,9.119342 v 5.12578 l -9.961154,2.64842 -5.29e-4,-6.38256 z m 0,16.88527 v 5.12527 l -23.056479,15.70705 v -8.0331 z" id="rect2997-5-4-8-7-1-7-3" inkscape:connector-curvature="0"></path>
+                </g>
+                <g inkscape:groupmode="layer" id="layer5" inkscape:label="Perpective building" style="display:none">
+                <path id="rect2997-5-4-8-7-1-44" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.309824,137.36298 63.695136,-35.35867 v 0 l -63.695136,43.39165 z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-4" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,124.12785 63.695135,-22.1295 v 0 l -63.695135,30.16248 z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-8-4" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,110.89868 63.695135,-8.90033 v 0 l -63.695135,16.93331 z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-8-1-7" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,97.669517 63.695135,4.328833 v 0 l -63.695135,3.70414 z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-8-1-0-6" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,84.440347 63.695135,17.558003 v 0 L 77.318345,92.473325 Z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-8-1-0-3-3" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,71.211181 63.695135,30.787169 v 0 L 77.318345,79.244158 Z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                <path id="rect2997-5-4-8-7-1-4-8-1-0-3-0-1" style="display:inline;opacity:1;fill:#000000;fill-opacity:1;stroke-width:0.264583" d="m 77.318345,57.982014 63.695135,44.016336 v 0 L 77.318345,66.014991 Z" sodipodi:nodetypes="ccccc" clip-path="none"></path>
+                </g>
+            </svg>
+            <!-- Logo End -->
+        </a>
+        <!-- Left links -->
+        <ul class="navbar-nav flex flex-col pl-0 list-style-none mr-auto">
+            <li class="nav-item p-2">
+            <a class="nav-link text-primary-color hover:text-second-color focus:text-second-color p-0" href="#">Home</a>
+            </li>
+            <li class="nav-item p-2">
+            <a class="nav-link text-primary-color hover:text-second-color focus:text-second-color p-0" href="#">Contact</a>
+            </li>
+            <li class="nav-item p-2">
+            <a class="nav-link text-primary-color hover:text-second-color focus:text-second-color p-0" href="#">About</a>
+            </li>
+        </ul>
+        <!-- Left links -->
+        </div>
+        <!-- Collapsible wrapper -->
+
+        <!-- Right elements -->
+        <div class="flex items-center relative">
+        <!-- Icon -->
+        <a class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4" href="#">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart"
+            class="w-4" role="img" xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 576 512">
+            <path fill="currentColor"
+                d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z">
+            </path>
+            </svg>
+        </a>
+        <div class="dropdown relative">
+            <a class="text-gray-500 hover:text-gray-700 focus:text-gray-700 mr-4 dropdown-toggle hidden-arrow flex items-center
+                " href="#" id="dropdownMenuButton1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bell"
+                class="w-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path fill="currentColor"
+                d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z">
+                </path>
+            </svg>
+            <span class="text-white bg-red-700 absolute rounded-full text-xs -mt-2.5 ml-2 py-0 px-1.5">1</span>
+            </a>
+            <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0
+            " aria-labelledby="dropdownMenuButton1">
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+                " href="#">Action</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+                " href="#">Another action</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+                " href="#">Something else here</a>
+            </li>
+            </ul>
+        </div>
+        <div class="dropdown relative">
+            <a class="dropdown-toggle flex items-center hidden-arrow" href="#" id="dropdownMenuButton2" role="button"
+            data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="https://mdbootstrap.com/img/new/avatars/2.jpg" class="rounded-full"
+                style="height: 25px; width: 25px" alt="" loading="lazy" />
+            </a>
+            <ul class="dropdown-menu min-w-max absolute hidden bg-white text-base z-50 float-left py-2 list-none text-left rounded-lg shadow-lg mt-1 hidden m-0 bg-clip-padding border-none left-auto right-0
+        " aria-labelledby="dropdownMenuButton2">
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+            " href="#">Action</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+            " href="#">Another action</a>
+            </li>
+            <li>
+                <a class="dropdown-item text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-gray-700 hover:bg-gray-100
+            " href="#">Something else here</a>
+            </li>
+            </ul>
+        </div>
+        </div>
+        <!-- Right elements -->
+        </div>
+        </nav>
+    </header>
+    <!-- HEADER END -->
+
+<!-- CORE CONTENT -->
+{% block content %}
+{% endblock %}
+<!-- CORE CONTENT END -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="p-4 bg-fourth-color sm:p-6 dark:bg-gray-900">
+        <div class="md:flex md:justify-between">
+            <div class="mb-6 md:mb-0">
+                <a href="https://flowbite.com/" class="flex items-center">
+                    <img src="https://flowbite.com/docs/images/logo.svg" class="mr-3 h-8" alt="FlowBite Logo" />
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap text-primary-color dark:text-white">Footer</span>
+                </a>
+            </div>
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3 text-primary-color">
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Resources</h2>
+                    <ul class="dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
+                        </li>
+                        <li>
+                            <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Follow us</h2>
+                    <ul class="dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="https://github.com/themesberg/flowbite" class="hover:underline ">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold uppercase dark:text-white">Legal</h2>
+                    <ul class="text-primary-color dark:text-gray-400">
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <div class="sm:flex sm:items-center sm:justify-between">
+            <span class="text-sm text-primary-color sm:text-center dark:text-gray-400">© 2022 <a href="https://flowbite.com/" class="hover:underline">Company ABC</a>. All Rights Reserved.
+            </span>
+            <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Facebook page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Instagram page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                    <span class="sr-only">Twitter page</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">GitHub account</span>
+                </a>
+                <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z" clip-rule="evenodd" /></svg>
+                    <span class="sr-only">Dribbbel account</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script src="{% static 'js/index.min.js' %}"></script>
+    <script src="{% static 'js/custom.min.js' %}"></script>
+</html>
