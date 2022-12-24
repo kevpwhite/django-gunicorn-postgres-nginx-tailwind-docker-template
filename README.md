@@ -30,8 +30,8 @@ python3 manage.py runserver 127.0.0.0:8000 #change IP to server address
 # copy ROOT_URLCONF =
 # add the project name to INSTALLED_APPS= [projectname] so django is aware of your project. 
 
-#projectname is the name entered above it creates a folder, I usually use the domain name. Move the root settings.py to project folder to replace standard settings.py file
-mv settings.py projectname
+#projectname is the name entered above it creates a folder, I usually use the domain name. Move the TemplatedProjectFilesMove stuff to project folder to replace standard files
+mv TemplatedProjectFilesMove/* projectname/
 ```
 
 This will spin up 2 containers; django built in runserver and postgres container
@@ -70,7 +70,14 @@ sudo chmod 600 .env
 sudo docker-compose up -d --build
 
 #migrate database
-sudo docker-compose exec web python3 manage.py migrate --noinput
+sudo docker-compose exec web-dev python3 manage.py migrate --noinput
+
+#create static files
+sudo docker-compose exec web-dev python3 manage.py collectstatic
+
+#create superuser
+sudo docker-compose exec web-dev python3 manage.py createsuperuser
+
 ```
 
 ## Production 
@@ -124,3 +131,20 @@ sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py migrat
 sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py collectstatic
 
 ```
+
+# Template colors coded in tailwind.config.js there is a primary-color, second-color, third-color, fourth-color, fith-color. Change those to your color theme. Example background code would be bg-primary-color. Example text would be text-primary-color.
+```
+    theme: {
+        extend: {
+            colors: {
+                'primary-color': '#285430',
+                'second-color': '#5F8D4E',
+                'third-color': '#A4BE7B',
+                'fourth-color': '#E5D9B6',
+                'fith-color': '#333333',
+              },
+        },
+    },
+```
+# great color pallete generator https://colorhunt.co/palettes/
+
