@@ -67,16 +67,21 @@ CSRF_TRUSTED_ORIGINS=http://localhost.com,http://127.0.0.1,http://0.0.0.0
 sudo chmod 600 .env
 
 # Command to build docker containers
-sudo docker-compose up -d --build
+sudo docker compose up -d --build
 
 #migrate database
-sudo docker-compose exec web-dev python3 manage.py migrate --noinput
+sudo docker compose exec web-dev python3 manage.py migrate --noinput
 
 #create static files
-sudo docker-compose exec web-dev python3 manage.py collectstatic
+sudo docker compose exec web-dev python3 manage.py collectstatic
 
 #create superuser
-sudo docker-compose exec web-dev python3 manage.py createsuperuser
+sudo docker compose exec web-dev python3 manage.py createsuperuser
+
+#run npm run build and npm tw-elements to setup css and javascript
+cd jstools
+npm run build
+npm run twelements
 
 ```
 
@@ -122,13 +127,13 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./etc/ssl/priva
 sudo nano nginx/nginx.conf
 
 # Command to build docker production containers
-sudo docker-compose up -f docker-compose.prod.yml up -d --build
+sudo docker compose up -f docker-compose.prod.yml up -d --build
 
 # Command to migrate all the django models 
-sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py migrate
+sudo docker compose -f docker-compose.prod.yml exec web python3 manage.py migrate
 
 # Command to build all static files.
-sudo docker-compose -f docker-compose.prod.yml exec web python3 manage.py collectstatic
+sudo docker compose -f docker-compose.prod.yml exec web python3 manage.py collectstatic
 
 ```
 
