@@ -22,7 +22,7 @@ pip3 install django
 python3 -m django startproject ENTERPROJECTNAME .
 
 # Test django was installed
-python3 manage.py runserver 127.0.0.0:8000 #change IP to server address
+python3 manage.py runserver 127.0.0.1:8000 #change IP to server address
 
 # copy the following from project folder setting.py created above and enter into the .env files created below.
 # copy SECRET_KEY= 
