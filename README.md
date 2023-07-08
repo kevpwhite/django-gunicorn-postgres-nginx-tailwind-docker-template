@@ -78,6 +78,10 @@ sudo docker compose exec web-dev python3 manage.py collectstatic
 #create superuser
 sudo docker compose exec web-dev python3 manage.py createsuperuser
 
+# If you're having issues with database run this 
+sudo docker compose -f docker-compose.prod.yml exec web python3 manage.py migrate --run-syncdb
+
+
 #run npm run build and npm tw-elements to setup css and javascript
 cd jstools
 npm run build
@@ -134,6 +138,11 @@ sudo docker compose -f docker-compose.prod.yml exec web python3 manage.py migrat
 
 # Command to build all static files.
 sudo docker compose -f docker-compose.prod.yml exec web python3 manage.py collectstatic
+
+# If you're having issues with database run this 
+sudo docker compose exec web-dev python3 manage.py migrate --run-syncdb
+
+
 
 ```
 
